@@ -1,3 +1,9 @@
+### Front End Task Output Link
+
+- CodeSandbox Output Link : https://qrjxi.csb.app .
+- CodeSandbox Exercise : https://codesandbox.io/s/axelerant-frontend-exercise-qrjxi
+
+
 # Axelerant: Front-end Interview
 
 ### Background
