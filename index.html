@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Company Name</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+<body>
+    <!-- Navbar Section Start -->
+    <header>
+        <nav>
+            <div class="nav-mobile flex">
+                <div class="nav-mobile-icon" onclick="openNavbar(1)"><img src="src/images/humberger.png"></div>
+                <div class="nav-logo">Company <span>Logo</span></div>
+                <div class="nav-mobile-chat"><img src="src/images/chat_icon.png" alt="chat-icon"></div>
+                <ul class="flex nov-mobile-menu" id="nav-mobile-menu">
+                    <li class="nav-logo flex space-between">
+                        <div>Company <span>Logo</span></div> 
+                        <div class="close" onclick="openNavbar(0)">x</div>
+                    </li>
+                    <li class="active"><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Solutions</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+            <div class="nav-desktop">
+                <div class="nav-logo">Company <span>Logo</span></div>
+                <div class="nav-menu">
+                    <ul class="flex">
+                        <li class="active"><a href="#">About</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Solutions</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><button type="button"><img src="src/images/chat_icon.png" alt="chat-icon"> Get in Touch</button></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Navbar Section End -->
+
+    <!-- Banner Section Start -->
+    <section class="banner">
+        <div class="banner-img">
+            <img src="src/images/Banner-img.jpg" alt="Banner">
+        </div>
+        <div class="banner-content">
+            <h2>Integer bibendum sit amet arcu vel egestas.</h2>
+            <ul class="flex banner-content-list">
+                <li class="flex">
+                    <div><img src="src/images/Icon-1.png"></div>
+                    <div>Service Name</div>
+                </li>
+                <li class="flex">
+                    <div><img src="src/images/Icon-2.png"></div>
+                    <div>Service Name</div>
+                </li>
+                <li class="flex">
+                    <div><img src="src/images/Icon-3.png"></div>
+                    <div>Service Name</div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- Banner Section End -->
+
+    <!-- About Us Section Start -->
+    <section class="about flex">
+        <div class="about-content">
+            <h3>Mauris id bibendum est. Proin dapibus sollicitudin iaculis, Maecenas condimentum maximus laoreet.</h3>
+            <p>In maximus euismod egestas. Fusce tincidunt posuere est non elementum. Vivamus tincidut eleifend nisl et gravida. Aenean in loem ultrices, pellentesque augue eu, mattis est. Praesent sed volutpat nibh. Morbi faucibus tortor send neque vulputate hendrerit. Sed aliquam mattis purus eleifend consectetur. Nulla mollis non enim non tempus. </p>
+        </div>
+        <div class="about-img">
+            <img src="src/images/about.png" alt="About us">
+        </div>
+    </section>
+    <!-- About Us Section End -->
+    
+    <!-- Testimonials Section Start -->
+    <section class="testimonial">
+        <h3>Testimonials</h3>
+        <ul class="testimonial-list flex">
+            <li>
+                <div class="testimonial-list-box">
+                    <span class="quote">&#8220;</span>Muris at quam at mauris venenatis eleifend. Nullam eleifend odio pretium dignissim. Aenean non rhoncus quam.
+                </div>
+                <div class="testimonial-list-author flex">
+                    <div><img src="src/images/user.png"></div>
+                    <div>
+                        <h4>Client Name</h4>
+                        <p>Position, ORG</p>
+                    </div>
+                </div>
+            </li>
+            <li class="testimonial-list-desk">
+                <div class="testimonial-list-box">
+                    <span class="quote">&#8220;</span>Lunc at ipsum iaculis, dictum magna id, lacinia ante. Nulla facilisi. Integer lobortis in risus eget volutpat. Donec interdum elit eget quam aliquam sodales. Vestibulum auctor auctor finibus.
+                </div>
+                <div class="testimonial-list-author flex">
+                    <div><img src="src/images/user.png"></div>
+                    <div>
+                        <h4>Client Name</h4>
+                        <p>Position, ORG</p>
+                    </div>
+                </div>
+            </li>
+            <li class="testimonial-list-desk">
+                <div class="testimonial-list-box">
+                    <span class="quote">&#8220;</span>Muris id bibendum est. Proin dapibus sollicitudin iaculis. Maecenas condimenutm maximus laoreet. In maximus euismod egestas
+                </div>
+                <div class="testimonial-list-author flex">
+                    <div><img src="src/images/user.png"></div>
+                    <div>
+                        <h4>Client Name</h4>
+                        <p>Position, ORG</p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <!-- Testimonials Section End -->
+
+    <!-- Contact Us Section Start -->
+    <section class="contact">
+        <img src="src/images/Footer-img.jpg" alt="Contact Banner">
+        <div class="contact-content">
+            <h3>Convinced to Work With Us?</h3>
+            <h5>Company has helped agencies keep their promises to clients since 2005.</h5>
+            <form class="flex contact-form" action="#" onsubmit="return contactSubmit()">
+                <div class="contact-form-top flex">
+                    <div>
+                        <input type="text" name="fullName" placeholder="Fullname" id="fullName" required>
+                    </div>
+                    <div>
+                        <input type="text" name="email" placeholder="Email Address" id="email">
+                    </div>
+                    <div>
+                        <input type="text" name="phoneNo" placeholder="Phone Number" id="phoneNo">
+                    </div>
+                </div>
+                <div>
+                    <textarea name="message" rows="6" placeholder="Message in breif" id="message"></textarea>
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="contact-button">Submit</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <!-- Contact Us Section End -->
+
+    <!-- Footer Section Start -->
+    <footer class="flex">
+        <div>
+            <p class="footer-copy">&copy; 2017 Company. All Rights Reserved.</p>
+        </div>
+        <div>
+            <ul class="footer-list flex">
+                <li>Follow us on:</li>
+                <li>
+                    <a href="http://facebook.com/" target="_blank">
+                        <img src="src/images/fb.png" alt="Facebook">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com" target="_blank">
+                        <img src="src/images/lin.png" alt="Facebook">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com" target="_blank">
+                        <img src="src/images/twt.png" alt="Facebook">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+    
+    <script>
+        function openNavbar(val){
+            if(val == 1){
+                document.getElementById("nav-mobile-menu").style.display = "block";
+            } else {
+                document.getElementById("nav-mobile-menu").style.display = "none";
+            }
+        }
+
+        function contactSubmit(){
+            let name = document.getElementById("fullName").value;
+            let email = document.getElementById("email").value;
+            let mobile = document.getElementById("phoneNo").value;
+            let message = document.getElementById("message").value;
+            alert(name + '\n' + email + '\n' + mobile + '\n' + message);
+            return false;
+        }
+    </script>
+</body>
+</html>
